@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>avgscore</module>
+        <module>mutiInput</module>
+        <module>hdfsp1</module>
     </modules>
 
     <properties>
@@ -32,8 +34,11 @@
 
         <!--<spring.data.redis.version>1.7.1.RELEASE</spring.data.redis.version>-->
         <!--<jedis.version>2.8.0</jedis.version>-->
+
         <hadoop.common.version>2.7.1</hadoop.common.version>
         <hadoop.core.version>1.2.1</hadoop.core.version>
+        <hadoop.hdfs.version>2.7.1</hadoop.hdfs.version>
+        <hadoop.client.version>2.7.1</hadoop.client.version>
     </properties>
 
     <dependencyManagement>
@@ -86,6 +91,21 @@
                 <artifactId>hadoop-core</artifactId>
                 <version>${hadoop.core.version}</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-hdfs -->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-hdfs</artifactId>
+                <version>${hadoop.hdfs.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client -->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-client</artifactId>
+                <version>${hadoop.client.version}</version>
+            </dependency>
+
             <!--hadoop end-->
 
         </dependencies>

@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>avgscore</artifactId>
+    <artifactId>mutiInput</artifactId>
     <packaging>jar</packaging>
 
-    <name>avgscore</name>
+    <name>mutiInput</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -39,5 +39,6 @@
             <!--<version>1.2.1</version>-->
         </dependency>
         <!--hadoop end-->
+
     </dependencies>
 </project>
